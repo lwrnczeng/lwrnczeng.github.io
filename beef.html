@@ -1,84 +1,98 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Lawrence Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<!-- Header -->
-		<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/portrait.jpg" alt="" /></a>
-					<h1><strong>I am Lawrence Zeng</strong>, an iOS developer.</h1>
-					<p></p>
-                    <div id="navigator">
-                            <li><a href="index.html#two">Portfolio</a> </li>
-                            <li><a href="index.html#three">Contact</a></li> 
-                    </div>
-				</div>
-			</header>
-		
-		<!-- Main -->
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REIBeef | Lawrence Zeng Portfolio</title>
+  <meta name="description" content="REIBeef agricultural analytics iOS application by Lawrence Zeng." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
 
-				<!-- One -->
-			<section id="projectDescription">
-				<header class="major">
-					<h2>REIBeef Project</h2>
-				</header>
-				<ul>
-			 	 This app helps optimize rumen efficiency, hence contribute to maximizing income over feed cost.
-				<li>Skills Used: Swift, Cocoa Touch, Core Data, SQLite, RESTful, APNs, XCode, MySQL </li>
-				<li>Consumed RESTful web services.  </li>
-				<li>Developed adaptive layouts.  </li>
-				<li>Implemented Apple Push Notification service.  </li>
-				<li>I was responsible for deploying apps to Test Flight and Apple App Store. Participated in developing the backend.</li>
-				<P><br><a href="https://itunes.apple.com/us/app/rei-beef/id1344539528?mt=8"><img src="images/AvailableOnAppStore.png" width="100"/></a></P>
-			</ul>
-                    </section>
-                    
-                    <section id="images">
-                           
-                        	<div class="row">
-                                    <article class="col-6 col-12-xsmall work-item">
-                                            <img src="images/projects/beef1.jpg" width="370"  alt="" />
-                                    </article>
-                                    <article class="col-6 col-12-xsmall work-item">
-                                            <img src="images/projects/beef2.jpg" width="370" alt="" />
-                                    </article>
-                                    <article class="col-6 col-12-xsmall">
-                                            <img src="images/projects/beef3.jpg" width="370" alt="" />
-                                    </article>
-                            </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <img src="images/portrait.jpg" alt="Lawrence Zeng" class="nav-avatar" />
+        <span>Lawrence Zeng</span>
+      </a>
 
-                            <p>
-                            </p>
+      <ul class="nav-menu">
+        <li><a href="index.html#projects" class="nav-link">← Back to Portfolio</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                        </section>
-			</div>
+  <div class="container detail-header">
+    <a href="index.html#projects" class="back-btn"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+    
+    <div class="section-header">
+      <span class="section-tag">// AgTech Analytics Application</span>
+      <h1 class="section-title">REIBeef</h1>
+      <p class="section-subtitle">Mobile Application Developer at Lallemand Inc. • Montreal, Canada</p>
+    </div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/lawrencezz/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-					</ul>
-					<ul class="copyright">
-							<li>&copy; Lawrence Zeng</li>
-					</ul>
-				</div>
-			</footer>
+    <div class="competency-card" style="margin-bottom: 2.5rem;">
+      <h3 class="competency-title" style="margin-bottom: 1rem;">Project Summary</h3>
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+        REIBeef is a specialized agricultural analytics iOS application designed to optimize rumen efficiency for farm managers, directly maximizing income over feed costs through automated data algorithms.
+      </p>
+      <ul class="timeline-bullets" style="margin: 0;">
+        <li>Built offline-first data synchronization layers utilizing Core Data, SQLite, and RESTful APIs in Swift.</li>
+        <li>Integrated APNs push notifications and custom charting for agricultural metrics.</li>
+        <li>Managed App Store distribution, TestFlight provisioning, and CI/CD pipelines.</li>
+      </ul>
+      <div class="tag-list" style="margin-top: 1.5rem;">
+        <span class="tag">Swift</span>
+        <span class="tag">Core Data</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">RESTful APIs</span>
+        <span class="tag">Xcode</span>
+        <span class="tag">APNs</span>
+      </div>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <div class="section-header" style="margin-bottom: 1.5rem;">
+      <h2 class="section-title" style="font-size: 1.5rem;">App Screenshot Showcase</h2>
+    </div>
 
-	</body>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/projects/beef1.jpg" alt="REIBeef Screenshot 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/beef2.jpg" alt="REIBeef Screenshot 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/beef3.jpg" alt="REIBeef Screenshot 3" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          &copy; <span id="year"></span> Liaoyuan (Lawrence) Zeng. All rights reserved.
+        </div>
+        <ul class="footer-socials">
+          <li><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/lwrnczeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:lwrnczeng@gmail.com" aria-label="Email"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

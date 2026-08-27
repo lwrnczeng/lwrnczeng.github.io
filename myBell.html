@@ -1,90 +1,103 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Lawrence Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<!-- Header -->
-		<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/portrait.jpg" alt="" /></a>
-					<h1><strong>I am Lawrence Zeng</strong>, an iOS developer.</h1>
-					<p></p>
-                    <div id="navigator">
-                            <li><a href="index.html#two">Portfolio</a> </li>
-                            <li><a href="index.html#three">Contact</a></li> 
-                    </div>
-				</div>
-			</header>
-		
-		<!-- Main -->
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyBell App | Lawrence Zeng Portfolio</title>
+  <meta name="description" content="MyBell iOS application development by Lawrence Zeng - Clean Architecture, APNs, Deep Linking, Adobe Analytics, and Dynatrace Monitoring." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
 
-				<!-- One -->
-			<section id="projectDescription">
-				<header class="major">
-					<h2>MyBell</h2>
-				</header>
-				<ul>
-					This app make it easy to manage Bell services and quick access to a variety of features for Bell Mobility, TV and Internet.
-				<li>Using clean architecture, implementing modularized code to improve reusability. </li>
-				<li>Implemented APNs, deep linking, Adobe analytics and Dynatrace Monitoring.</li>
-				<li>Used traffic diagnosis tools such as Charles Proxy and Postman. </li>
-				<li>Provide guidance and mentorship to developers when needed. </li>
-				<li>Won the <a href="https://www.mobile-webaward.org/mwa/winners_detail.asp?yr=all&award_level=best&category=Telecommunication" target="_blank">MobileWebAward</a> for the Best Telecom Mobile Application worldwide for 2018.</li>
-				<P><br><a href="https://apps.apple.com/ca/app/mybell/id850549838"><img src="images/AvailableOnAppStore.png" width="100"/></a></P>
-			</ul>
-                    </section>
-                    
-                    <section id="images">
-                           
-                        	<div class="row">
-                                    <article class="col-6 col-12-xsmall work-item">
-                                            <img src="images/projects/bell/bell1.jpg" width="370"  alt="" />
-                                    </article>
-                                    <article class="col-6 col-12-xsmall work-item">
-                                            <img src="images/projects/bell/bell2.jpg" width="370" alt="" />
-                                    </article>
-                                    <article class="col-6 col-12-xsmall">
-                                            <img src="images/projects/bell/bell3.jpg" width="370" alt="" />
-									</article>
-									<article class="col-6 col-12-xsmall">
-										<img src="images/projects/bell/bell4.jpg" width="370" alt="" />
-									</article>
-									<article class="col-6 col-12-xsmall">
-										<img src="images/projects/bell/bell5.jpg" width="370" alt="" />
-									</article>
-                            </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <img src="images/portrait.jpg" alt="Lawrence Zeng" class="nav-avatar" />
+        <span>Lawrence Zeng</span>
+      </a>
 
-                            <p>
-                            </p>
+      <ul class="nav-menu">
+        <li><a href="index.html#projects" class="nav-link">← Back to Portfolio</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                        </section>
-			</div>
+  <div class="container detail-header">
+    <a href="index.html#projects" class="back-btn"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+    
+    <div class="section-header">
+      <span class="section-tag">// Award-Winning Telecom App</span>
+      <h1 class="section-title">MyBell App</h1>
+      <p class="section-subtitle">Sr. Mobile Developer at Bell Canada • Winner of MobileWebAward for Best Telecom Application</p>
+    </div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/lawrencezz/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-					</ul>
-					<ul class="copyright">
-							<li>&copy; Lawrence Zeng</li>
-					</ul>
-				</div>
-			</footer>
+    <div class="competency-card" style="margin-bottom: 2.5rem;">
+      <h3 class="competency-title" style="margin-bottom: 1rem;">Project Overview & Engineering Highlights</h3>
+      <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+        This app makes it easy to manage Bell services with quick access to a variety of features for Bell Mobility, TV, and Internet across millions of active Canadian subscribers.
+      </p>
+      <ul class="timeline-bullets" style="margin: 0;">
+        <li>Applied Clean Architecture principles to implement highly reusable, modular code structures, accelerating cross-app feature adoption.</li>
+        <li>Implemented APNs push notifications, universal deep linking, Adobe Analytics tracking, and Dynatrace APM for real-time monitoring.</li>
+        <li>Utilized network traffic diagnosis tools (Charles Proxy, Postman) to optimize API payload efficiency.</li>
+        <li>Provided technical leadership and mentorship to team developers.</li>
+        <li>Won the <a href="https://www.mobile-webaward.org/mwa/winners_detail.asp?yr=all&award_level=best&category=Telecommunication" target="_blank" rel="noopener noreferrer">MobileWebAward</a> for Best Telecom Mobile Application worldwide.</li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <a href="https://apps.apple.com/ca/app/mybell/id850549838" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <i class="fa fa-apple"></i> View on App Store
+        </a>
+      </div>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <div class="section-header" style="margin-bottom: 1.5rem;">
+      <h2 class="section-title" style="font-size: 1.5rem;">Screenshots & Interface Showcase</h2>
+    </div>
 
-	</body>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/projects/bell/bell1.jpg" alt="MyBell Screenshot 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/bell/bell2.jpg" alt="MyBell Screenshot 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/bell/bell3.jpg" alt="MyBell Screenshot 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/bell/bell4.jpg" alt="MyBell Screenshot 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/projects/bell/bell5.jpg" alt="MyBell Screenshot 5" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          &copy; <span id="year"></span> Liaoyuan (Lawrence) Zeng. All rights reserved.
+        </div>
+        <ul class="footer-socials">
+          <li><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/lwrnczeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:lwrnczeng@gmail.com" aria-label="Email"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

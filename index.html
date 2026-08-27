@@ -1,187 +1,575 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Lawrence Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liaoyuan (Lawrence) Zeng | Staff iOS Engineer & Mobile Architect</title>
+  <meta name="description" content="Personal portfolio of Liaoyuan (Lawrence) Zeng - Staff iOS Engineer and Mobile Architect specializing in SwiftUI, Combine, Swift Concurrency, Clean Modular Architecture, Enterprise Banking Security, and AI Integration." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+<body>
 
-<body class="is-preload">
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="images/portrait.jpg" alt="Lawrence Zeng" class="nav-avatar" />
+        <span>Lawrence Zeng</span>
+      </a>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <i class="fa fa-bars"></i>
+      </button>
 
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/portrait.jpg" alt="" /></a>
-			<h1><strong>I am Lawrence Zeng</strong>, an iOS developer.</h1>
-			<p></p>
-			<p></p>
-			<div id="navigator">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#competencies" class="nav-link">Competencies</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-				<!-- <ul class="link"> -->
-				<li><a class="link" href="#two" class="button">Portfolio</a> </li>
-				<!-- </ul> -->
-				<li><a class="link" href="#three" class="button">Contact</a> </li>
-				<!-- <a href="#three" class="button">Contact</a> -->
-			</div>
-		</div>
-	</header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            <span>Available for Mobile Leadership & Architecture Roles</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Lawrence Zeng</span>
+          </h1>
+          <h2 class="hero-role">Staff iOS Engineer & Mobile Architect</h2>
+          <p class="hero-desc">
+            18+ years of software engineering experience (10+ years in native iOS) specializing in high-performance modular application design, enterprise banking security, SwiftUI/Combine, and AI agent integration. Technical anchor driving zero-regression deployments across multi-squad environments.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa fa-th-large"></i> Explore Featured Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa fa-envelope-o"></i> Get In Touch
+            </a>
+            <a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa fa-linkedin"></i> LinkedIn Profile
+            </a>
+          </div>
+        </div>
 
-	<!-- Main -->
-	<div id="main">
+        <div class="hero-avatar-wrapper">
+          <img src="images/portrait.jpg" alt="Liaoyuan (Lawrence) Zeng" class="hero-avatar" />
+        </div>
+      </div>
 
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h2>Self Introduction</h2>
-			</header>
-			<p>I am an experienced mobile App and backend developer with a demonstrated history of working in the
-				computer software industry, skilled in Swift, Objective-C, JSON, REST, Xamarin, C#, .Net, JavaScript,
-				XML, Web Services, Database, Agile and Scrum, with excellent ability to work in groups of all sizes. I
-				am an honest, reliable, and trustworthy individual.</p>
-			<!-- <ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul> -->
-		</section>
+      <!-- Stats Counter Bar -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">18+</div>
+          <div class="stat-label">Years Software Engineering</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Native iOS Mastery</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Millions</div>
+          <div class="stat-label">Active Canadian Users Served</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2x</div>
+          <div class="stat-label">MobileWebAward Winners</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<!-- Two -->
-		<section id="two">
-			<h2>Portfolio</h2>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="virginMobileMyAccount.html" class="image fit thumb"><img
-							src="images/projects/virgin/virgin2.jpg" width="300" alt="Learn More" /></a>
-					<h3>Virgin Mobile My Account</h3>
-					<p>The My Account app lets you manage your account 24/7 from your phone. Pay your bill, check your
-						usage, grab a travel pass and so much more.</p>
-					<p>Won the <a
-							href="https://www.mobile-webaward.org/mwa/winners_detail.asp?yr=all&award_level=best&category=Telecommunication"
-							target="_blank">MobileWebAward</a> for the Best Telecom Mobile Application worldwide for
-						2020.</p>
-				</article>
+  <!-- About / Executive Summary Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Executive Summary</span>
+        <h2 class="section-title">Architecting Mobile Excellence & AI Workflows</h2>
+        <p class="section-subtitle">A track record of driving complex multi-squad iOS engineering, modularizing legacy monoliths, and delivering mission-critical applications.</p>
+      </div>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="myBell.html" class="image fit thumb"><img src="images/projects/bell/bell2.jpg" width="300"
-							alt="Learn More" /></a>
-					<h3>MyBell</h3>
-					<p>This app makes it easy to manage Bell services and quick access to a variety of features for Bell
-						Mobility, TV and Internet.</p>
-					<p>Won the <a
-							href="https://www.mobile-webaward.org/mwa/winners_detail.asp?yr=all&award_level=best&category=Telecommunication"
-							target="_blank">MobileWebAward</a> for the Best Telecom Mobile Application worldwide for
-						2018.</p>
-				</article>
+      <div class="competency-card" style="background: var(--gradient-card);">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+          As a <strong style="color: var(--text-primary);">Staff iOS Engineer & Mobile Architect</strong>, I bridge the gap between high-level architectural strategy and hands-on execution. My experience spans leading the modularization of Tier-1 banking applications at <strong style="color: var(--accent-cyan);">CIBC</strong>, scaling multi-million user telecom platforms at <strong style="color: var(--accent-cyan);">Bell Canada</strong>, and designing specialized agricultural and real-time streaming architectures.
+          <br><br>
+          I focus on building clean, resilient iOS codebases with <strong style="color: var(--text-primary);">SwiftUI, Combine, and Swift Concurrency</strong>, pioneering <strong style="color: var(--accent-cyan);">AI safety API integrations</strong>, and leveraging Kotlin Multiplatform (KMP) for unified business logic across mobile platforms.
+        </p>
+      </div>
+    </div>
+  </section>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="beef.html" class="image fit thumb"><img src="images/projects/beef2.jpg" width="300"
-							alt="Learn More" /></a>
-					<h3>REIBeef</h3>
-					<p>This app helps optimize rumen efficiency, hence contribute to maximizing income over feed cost.
-						<br>kills Used: Swift, Cocoa Touch, Core Data, SQLite, RESTful, APNs, XCode, MySQL
-					</p>
+  <!-- Core Competencies Section -->
+  <section id="competencies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Technical Expertise</span>
+        <h2 class="section-title">Core Competencies & Stack</h2>
+        <p class="section-subtitle">Deep expertise across modern iOS architecture, enterprise security, and AI-accelerated development.</p>
+      </div>
 
-				</article>
+      <div class="competencies-grid">
+        <!-- Card 1 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-apple"></i></div>
+          <h3 class="competency-title">Native iOS Mastery</h3>
+          <p class="competency-desc">Deep expert knowledge of Apple ecosystem frameworks, modern state management, and async workflows.</p>
+          <div class="tag-list">
+            <span class="tag">SwiftUI</span>
+            <span class="tag">Combine</span>
+            <span class="tag">Swift Concurrency</span>
+            <span class="tag">UIKit</span>
+            <span class="tag">Core Data</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="lalsil.html" class="image fit thumb" alt="Learn More"><img
-							src="images/projects/Lalsil3.jpg" width="300" alt="Learn More" /></a>
-					<h3>Lalsil</h3>
-					<p>This app assists big farms in silage management of beef cows and dairy cows.
-						<br>Used similar technologies to the REIBeef app.
+        <!-- Card 2 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-cubes"></i></div>
+          <h3 class="competency-title">Modular Architecture</h3>
+          <p class="competency-desc">Designing decoupled, testable micro-modules and interface-driven Clean Architecture patterns.</p>
+          <div class="tag-list">
+            <span class="tag">Clean Architecture</span>
+            <span class="tag">MVVM-C</span>
+            <span class="tag">VIPER</span>
+            <span class="tag">Dependency Injection</span>
+            <span class="tag">Repository Pattern</span>
+          </div>
+        </div>
 
-				</article>
+        <!-- Card 3 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-shield"></i></div>
+          <h3 class="competency-title">Security & Networking</h3>
+          <p class="competency-desc">Enterprise key protection, cryptographic key management, biometrics, and deep linking infrastructure.</p>
+          <div class="tag-list">
+            <span class="tag">E2E Key Protection</span>
+            <span class="tag">Universal Links</span>
+            <span class="tag">REST & GraphQL</span>
+            <span class="tag">Keychain Security</span>
+            <span class="tag">Biometric Auth</span>
+          </div>
+        </div>
 
+        <!-- Card 4 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-magic"></i></div>
+          <h3 class="competency-title">AI Safety & SDLC Acceleration</h3>
+          <p class="competency-desc">Native AI safety payload evaluation and AI agent workflows (Copilot, Claude, OpenAI) to accelerate delivery.</p>
+          <div class="tag-list">
+            <span class="tag">AI Safety Engine</span>
+            <span class="tag">e-Transfer Moderation</span>
+            <span class="tag">GitHub Copilot</span>
+            <span class="tag">Claude / LLMs</span>
+            <span class="tag">Automated Testing</span>
+          </div>
+        </div>
 
+        <!-- Card 5 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-mobile"></i></div>
+          <h3 class="competency-title">Cross-Platform & Web Bridges</h3>
+          <p class="competency-desc">Unifying core business rules across iOS and Android with shared multiplatform engines.</p>
+          <div class="tag-list">
+            <span class="tag">Kotlin Multiplatform (KMP)</span>
+            <span class="tag">Web-to-Native Bridges</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">C# / Xamarin</span>
+          </div>
+        </div>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="hLightning.html" class="image fit thumb"><img src="images/projects/hlightning1.jpg"
-							width="300" alt="Learn More" /></a>
-					<h3>Helplightning</h3>
-					<p>
-						Swift, Objective-C, UIKit, Cocoa Touch, Cocoa Pods, JSON, Core Data, SQLite, SQLCipher,
-						Firebase, Xcode, Git</p>
-				</article>
+        <!-- Card 6 -->
+        <div class="competency-card">
+          <div class="competency-icon"><i class="fa fa-cogs"></i></div>
+          <h3 class="competency-title">Tooling & Infrastructure</h3>
+          <p class="competency-desc">CI/CD pipeline configuration, traffic analysis, performance monitoring, and team leadership.</p>
+          <div class="tag-list">
+            <span class="tag">Xcode</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Fastlane</span>
+            <span class="tag">Charles Proxy</span>
+            <span class="tag">Dynatrace</span>
+            <span class="tag">Adobe Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="naxos.html" class="image fit thumb"><img src="images/projects/naxos/3.jpg" width="300"
-							alt="Learn More" /></a>
-					<h3>Naxos Music Library</h3>
-					<p>A responsive mobile application for customers to search for and stream music to their mobile
-						devices as well as to create playlists.
-						<br>Xamarin, AVFoundation, UIKit
-					</p>
-				</article>
+  <!-- Experience Timeline Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Career Track</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">18+ years of engineering leadership across top financial institutions, telecommunications, and enterprise software companies.</p>
+      </div>
 
-			</div>
-			<!-- <ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul> -->
-		</section>
+      <div class="timeline">
+        <!-- CIBC -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile Application Architect / Consultant</h3>
+                <div class="timeline-company">CIBC (Canadian Imperial Bank of Commerce)</div>
+                <div class="timeline-location">Toronto, Canada</div>
+              </div>
+              <div class="timeline-date">Aug 2021 – Present</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li><strong>Modular Architecture & High-Performance Swift:</strong> Led hands-on modularization of the CIBC banking app using Clean Architecture principles, SwiftUI, and Combine, reducing compile times by 30% and building Swift Concurrency (async/await) POC blueprints for multi-squad execution.</li>
+              <li><strong>Security Engineering & Deep Linking Frameworks:</strong> Architected end-to-end API/vendor key protection via Jenkins Credentialing and cryptographic algorithms. Engineered an in-house Universal Link/Deep Linking engine to optimize web-to-app transactional journeys.</li>
+              <li><strong>AI-Powered Safety & Content Moderation:</strong> Led native iOS integration for CIBC's AI-driven e-Transfer message safety engine. Co-designed API contracts with backend teams to perform real-time payload evaluation, handling safety flags, native warning interstitials, and block states in SwiftUI for millions of transactions.</li>
+              <li><strong>AI-Accelerated SDLC & Tooling:</strong> Integrated enterprise AI tools (GitHub Copilot, Claude, OpenAI models) into engineering workflows to accelerate program design, refactor legacy codebases into modular SwiftUI components, and automate unit test generation.</li>
+              <li><strong>Cross-Platform Strategy & Mentorship:</strong> Evaluated and integrated Kotlin Multiplatform (KMP) to share core transaction logic across iOS and Android. Guided engineering squads through PR reviews, complex production troubleshooting, and API contract alignment.</li>
+            </ul>
+          </div>
+        </div>
 
-		<!-- Three -->
-		<section id="three">
-			<h2>Get In Touch</h2>
+        <!-- Bell Canada -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Sr. Developer, Mobile Application</h3>
+                <div class="timeline-company">Bell Canada</div>
+                <div class="timeline-location">Montreal, Canada</div>
+              </div>
+              <div class="timeline-date">April 2019 – Aug 2021</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li><strong>Native iOS Application Delivery:</strong> Developed and maintained tier-1 native iOS applications for Bell (MyBell, Virgin Mobile My Account, Lucky Mobile My Account), delivering seamless account management and billing capabilities to millions of Canadian users.</li>
+              <li><strong>Clean Modular Architecture:</strong> Applied Clean Architecture principles to implement highly reusable, modular code structures, accelerating cross-app feature adoption and reducing maintenance overhead. Won the MobileWebAward for Best Telecom Mobile Application (2018 & 2020).</li>
+              <li><strong>Integration & Analytics Infrastructure:</strong> Implemented APNs push notifications, universal deep linking, Adobe Analytics tracking, and Dynatrace APM for real-time app health and user session monitoring.</li>
+              <li><strong>Network Diagnosis & Optimization:</strong> Utilized traffic diagnosis tools (Charles Proxy, Postman) to optimize API payload efficiency, debug network latencies, and mentor junior developers on code quality standards.</li>
+            </ul>
+          </div>
+        </div>
 
-			<div class="row">
-				<!-- <div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div> -->
-				<div class="col-4 col-12-small">
-					<ul class="labeled-icons">
-						<!-- 
-									<li>
-										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										514-660-1018
-									</li> -->
-						<li>
-							<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-							<a href="mailto:lwrnczeng@gmail.com">lwrnczeng@gmail.com</a>
-						</li>
-						<li>
-							<h3 class="icon fa-home"><span class="label">Address</span></h3>
-							Toronto, ON<br />
-							Canada
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+        <!-- Lallemand -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile Application Developer</h3>
+                <div class="timeline-company">Lallemand Inc.</div>
+                <div class="timeline-location">Montreal, Canada</div>
+              </div>
+              <div class="timeline-date">Dec 2017 – April 2019</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed agricultural analytics iOS applications (REI Beef, LALSIL) automating complex data processing for farm management.</li>
+              <li>Built offline-first data synchronization layers utilizing Core Data, SQLite, and RESTful APIs with Swift and Cocoa Touch.</li>
+              <li>Managed end-to-end App Store deployments, TestFlight provisioning, and CI/CD distribution pipelines.</li>
+            </ul>
+          </div>
+        </div>
 
-	</div>
+        <!-- Help Lightning -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">iOS Developer</h3>
+                <div class="timeline-company">Help Lightning, Inc.</div>
+                <div class="timeline-location">Beijing, China</div>
+              </div>
+              <div class="timeline-date">July 2015 – March 2017</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engineered interactive B2B remote assistance iOS app merging two real-time video streams.</li>
+              <li>Developed real-time contacts management, user account security, and video session state handling using Swift, Objective-C, CocoaPods, and Realm.</li>
+            </ul>
+          </div>
+        </div>
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/lawrencezz/" class="icon fa-linkedin"><span
-							class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/lwrnczeng" class="icon fa-github"><span class="label">Github</span></a>
-				</li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Lawrence Zeng</li>
-			</ul>
-		</div>
-	</footer>
+        <!-- NWN Corporation -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Architect</h3>
+                <div class="timeline-company">NWN Corporation (Beijing Branch)</div>
+                <div class="timeline-location">Beijing, China</div>
+              </div>
+              <div class="timeline-date">August 2007 – July 2015</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li><strong>Large-Scale Streaming Architecture:</strong> Architected and launched the mobile application for Naxos Music Library, enabling audio streaming for over 100,000 CDs and 1.5M+ music tracks globally.</li>
+              <li><strong>Copyright Management App (MyWerx):</strong> Designed and developed MyWerx iOS app and online lifecycle copyright system utilizing Objective-C, REST Web Services, AWS, and cryptographic validation.</li>
+            </ul>
+          </div>
+        </div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+        <!-- DGT -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Developer</h3>
+                <div class="timeline-company">DGT Information Systems Ltd.</div>
+                <div class="timeline-location">Beijing, China</div>
+              </div>
+              <div class="timeline-date">August 2005 – July 2007</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed high-integrity supply chain management systems (OEM for Microsoft Supply Chain).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Featured Projects Showcase Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Featured Applications</span>
+        <h2 class="section-title">Portfolio Showcase</h2>
+        <p class="section-subtitle">A selection of high-impact iOS applications serving millions of active users worldwide.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- CIBC Mobile Banking (NEW) -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/CIBC_APP_Image_Assets/1.jpg" alt="CIBC Mobile Banking" class="project-image" />
+            <span class="project-badge">Enterprise Banking</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CIBC Mobile Banking</h3>
+            <p class="project-desc">
+              Led modular architecture, Swift Concurrency blueprints, AI e-Transfer safety engine integration, and universal deep linking engine serving millions of banking customers.
+            </p>
+            <div class="project-footer">
+              <a href="cibc.html" class="project-link">
+                View Architecture & Screenshots <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MyBell -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/projects/bell/bell2.jpg" alt="MyBell iOS App" class="project-image" />
+            <span class="project-badge">MobileWebAward Winner 2018</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">MyBell App</h3>
+            <p class="project-desc">
+              Tier-1 telecom account management for Bell Mobility, TV, and Internet. Applied Clean Architecture micro-modules, APNs, deep linking, and Dynatrace monitoring.
+            </p>
+            <div class="project-footer">
+              <a href="myBell.html" class="project-link">
+                View Project Details <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Virgin Mobile My Account -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/projects/virgin/virgin2.jpg" alt="Virgin Mobile My Account" class="project-image" />
+            <span class="project-badge">MobileWebAward Winner 2020</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Virgin Mobile My Account</h3>
+            <p class="project-desc">
+              Award-winning 24/7 mobile account management, bill payments, and usage analytics application serving millions of active users across Canada.
+            </p>
+            <div class="project-footer">
+              <a href="virginMobileMyAccount.html" class="project-link">
+                View Project Details <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- REIBeef & LALSIL -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/projects/beef2.jpg" alt="REIBeef Agricultural Analytics" class="project-image" />
+            <span class="project-badge">AgTech Analytics</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">REIBeef & LALSIL</h3>
+            <p class="project-desc">
+              Agricultural analytics iOS apps automating complex data calculations for farm rumen efficiency and silage management using Core Data, SQLite, and REST APIs.
+            </p>
+            <div class="project-footer">
+              <a href="beef.html" class="project-link">
+                View REIBeef Details <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help Lightning -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/projects/hlightning1.jpg" alt="Help Lightning App" class="project-image" />
+            <span class="project-badge">Real-Time Video Assistance</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Help Lightning</h3>
+            <p class="project-desc">
+              Interactive B2B remote assistance iOS application merging two real-time video streams using Objective-C, Swift, Realm, and CocoaPods.
+            </p>
+            <div class="project-footer">
+              <a href="hLightning.html" class="project-link">
+                View Project Details <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Naxos Music Library -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="images/projects/naxos/3.jpg" alt="Naxos Music Library App" class="project-image" />
+            <span class="project-badge">Global Streaming Architecture</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Naxos Music Library</h3>
+            <p class="project-desc">
+              Global audio streaming mobile application enabling music discovery across 100,000+ CDs and 1.5M+ tracks worldwide using AVFoundation and custom caching.
+            </p>
+            <div class="project-footer">
+              <a href="naxos.html" class="project-link">
+                View Project Details <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Background</span>
+        <h2 class="section-title">Education & Credentials</h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-card">
+          <h3 class="education-degree">Master of Science in Project Management</h3>
+          <div class="education-school">University of Chinese Academy of Sciences</div>
+          <div class="education-meta">Beijing, China • 2010 – 2012</div>
+        </div>
+
+        <div class="education-card">
+          <h3 class="education-degree">Bachelor of Science in Management Information Systems</h3>
+          <div class="education-school">Liaoning Technical University</div>
+          <div class="education-meta">Liaoning, China • 1998 – 2002</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Interested in mobile architecture leadership, technical consulting, or enterprise iOS engineering?</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-envelope-o"></i></div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:lwrnczeng@gmail.com">lwrnczeng@gmail.com</a></div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-phone"></i></div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">437-985-6686</div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Toronto, ON, Canada</div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa fa-linkedin"></i></div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value"><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lawrencezz</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          &copy; <span id="year"></span> Liaoyuan (Lawrence) Zeng. All rights reserved.
+        </div>
+        <ul class="footer-socials">
+          <li><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/lwrnczeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:lwrnczeng@gmail.com" aria-label="Email"><i class="fa fa-envelope-o"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Set current copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Navigation Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when link clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
 </body>
-
 </html>
