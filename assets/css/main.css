@@ -181,11 +181,15 @@ a:hover {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 2.25rem 0;
+}
+
+#about {
+  padding-top: 1.5rem;
 }
 
 .section-header {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .section-tag {
@@ -215,9 +219,8 @@ section {
 
 /* Hero Section */
 .hero {
-  padding-top: 9rem;
-  padding-bottom: 5rem;
-  min-height: 85vh;
+  padding-top: 7.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   align-items: center;
 }
