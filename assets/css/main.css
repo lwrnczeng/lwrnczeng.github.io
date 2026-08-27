@@ -636,6 +636,64 @@ section {
   box-shadow: var(--shadow-card), var(--shadow-glow);
 }
 
+/* Brand-Specific Card Accents */
+.project-card.cibc-card {
+  border-top: 3px solid #c8102e;
+}
+
+.project-card.cibc-card:hover {
+  border-color: #c8102e;
+  box-shadow: var(--shadow-card), 0 0 25px rgba(200, 16, 46, 0.4);
+}
+
+.project-card.cibc-card .project-badge {
+  background: rgba(180, 12, 35, 0.9);
+  border-color: rgba(255, 77, 109, 0.5);
+  color: #ffffff;
+}
+
+.project-card.cibc-card .project-image-wrapper {
+  background: linear-gradient(135deg, #180306 0%, #700a18 50%, #c8102e 100%);
+}
+
+.project-card.cibc-card .project-link {
+  color: #ff4d6d;
+}
+
+.project-card.cibc-card .project-link:hover {
+  color: #ffffff;
+}
+
+.project-card.bell-card {
+  border-top: 3px solid #0066cc;
+}
+
+.project-card.bell-card:hover {
+  border-color: #38bdf8;
+  box-shadow: var(--shadow-card), 0 0 25px rgba(0, 102, 204, 0.4);
+}
+
+.project-card.bell-card .project-badge {
+  background: rgba(0, 102, 204, 0.9);
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #ffffff;
+}
+
+.project-card.virgin-card {
+  border-top: 3px solid #e10a0a;
+}
+
+.project-card.virgin-card:hover {
+  border-color: #ff3355;
+  box-shadow: var(--shadow-card), 0 0 25px rgba(225, 10, 10, 0.4);
+}
+
+.project-card.virgin-card .project-badge {
+  background: rgba(200, 10, 10, 0.9);
+  border-color: rgba(255, 100, 120, 0.5);
+  color: #ffffff;
+}
+
 .project-image-wrapper {
   position: relative;
   width: 100%;
