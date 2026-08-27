@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CIBC Mobile Banking | Lawrence Zeng Portfolio</title>
-  <meta name="description" content="CIBC Mobile Banking Architecture, SwiftUI modularization, AI safety engine, and Universal Links framework by Lawrence Zeng." />
-  
+  <meta name="description"
+    content="CIBC Mobile Banking Architecture, SwiftUI modularization, AI safety engine, and Universal Links framework by Lawrence Zeng." />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="assets/css/font-awesome.min.css?v=2.0" />
-  
+
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main.css?v=2.0" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2.3" />
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
@@ -36,43 +41,98 @@
 
   <div class="container detail-header">
     <a href="index.html#projects" class="back-btn"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
-    
+
     <div class="section-header">
-      <span class="section-tag">// Enterprise Financial Application</span>
-      <h1 class="section-title">CIBC Mobile Banking Architecture</h1>
-      <p class="section-subtitle">Mobile Application Architect & Consultant (Aug 2021 – Present) • Toronto, ON</p>
+      <span class="section-tag" style="color: #ff4d6d;">// Enterprise Banking Architecture</span>
+      <h1 class="section-title">CIBC Mobile Banking</h1>
+      <p class="section-subtitle">Everyday banking on the go • Mobile Application Architect & Consultant (Aug 2021 –
+        Present)</p>
     </div>
 
+    <!-- App Store Banner Card -->
+    <div class="competency-card"
+      style="background: linear-gradient(135deg, rgba(200, 16, 46, 0.25) 0%, rgba(120, 10, 25, 0.35) 100%); border: 1px solid rgba(255, 77, 109, 0.4); margin-bottom: 2.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+            <span class="tag" style="background: rgba(200, 16, 46, 0.8); color: #ffffff; border: none;">#5 Finance in
+              App Store</span>
+            <span class="tag"
+              style="background: rgba(30, 41, 59, 0.9); color: var(--accent-cyan); border-color: rgba(56, 189, 248, 0.3);">4.2
+              ★ (28K+ Ratings)</span>
+            <span class="tag"
+              style="background: rgba(30, 41, 59, 0.9); color: #ffffff; border-color: rgba(255,255,255,0.2);">Age
+              4+</span>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 1rem;">
+            Tier-1 Banking Application serving millions of active Canadian users for daily transactions, e-Transfers,
+            accounts, and financial advice.
+          </p>
+        </div>
+        <a href="https://apps.apple.com/ca/app/cibc-mobile-banking/id351448953" target="_blank"
+          rel="noopener noreferrer" class="btn"
+          style="background: #c8102e; color: #ffffff; box-shadow: 0 4px 20px rgba(200, 16, 46, 0.4);">
+          <i class="fa fa-apple"></i> View on App Store
+        </a>
+      </div>
+    </div>
+
+    <!-- Key Accomplishments Card -->
     <div class="competency-card" style="margin-bottom: 2.5rem;">
       <h3 class="competency-title" style="margin-bottom: 1rem;">Key Architectural Accomplishments</h3>
       <ul class="timeline-bullets" style="margin: 0;">
-        <li><strong>Modular Architecture & High-Performance Swift:</strong> Led hands-on modularization of the CIBC banking app using Clean Architecture principles, SwiftUI, and Combine, reducing compile times by 30% and building Swift Concurrency (async/await) POC blueprints for high-velocity squad execution.</li>
-        <li><strong>Security Engineering & Deep Linking Frameworks:</strong> Architected end-to-end API/vendor key protection via Jenkins Credentialing and cryptographic algorithms. Engineered an in-house Universal Link/Deep Linking engine to optimize web-to-app transactional journeys.</li>
-        <li><strong>AI-Powered Safety & Content Moderation:</strong> Led native iOS integration for CIBC's AI-driven e-Transfer message safety engine. Co-designed API contracts with backend teams to perform real-time payload evaluation, handling safety flags, native warning interstitials, and block states in SwiftUI for millions of transactions.</li>
-        <li><strong>AI-Accelerated SDLC & Tooling:</strong> Integrated enterprise AI tools (GitHub Copilot, Claude, OpenAI models) into engineering workflows to accelerate end-to-end program design, refactor legacy codebases into modular SwiftUI components, and automate unit test generation.</li>
-        <li><strong>Cross-Platform Strategy:</strong> Evaluated and integrated Kotlin Multiplatform (KMP) to share core transaction logic across iOS and Android platforms.</li>
+        <li><strong>Modular Architecture & High-Performance Swift:</strong> Led hands-on modularization of the CIBC
+          banking app using Clean Architecture principles, SwiftUI, and Combine, reducing compile times by 30% and
+          building Swift Concurrency (async/await) POC blueprints for high-velocity squad execution.</li>
+        <li><strong>Security Engineering & Deep Linking Frameworks:</strong> Architected end-to-end API/vendor key
+          protection via Jenkins Credentialing and cryptographic algorithms. Engineered an in-house Universal Link/Deep
+          Linking engine to optimize web-to-app transactional journeys.</li>
+        <li><strong>AI-Powered Safety & Content Moderation:</strong> Led native iOS integration for CIBC's AI-driven
+          e-Transfer message safety engine. Co-designed API contracts with backend teams to perform real-time payload
+          evaluation, handling safety flags, native warning interstitials, and block states in SwiftUI for millions of
+          transactions.</li>
+        <li><strong>AI-Accelerated SDLC & Tooling:</strong> Integrated enterprise AI tools (GitHub Copilot, Claude,
+          OpenAI models) into engineering workflows to accelerate end-to-end program design, refactor legacy codebases
+          into modular SwiftUI components, and automate unit test generation.</li>
+        <li><strong>Cross-Platform Strategy:</strong> Evaluated and integrated Kotlin Multiplatform (KMP) to share core
+          transaction logic across iOS and Android platforms.</li>
       </ul>
     </div>
 
     <div class="section-header" style="margin-bottom: 1.5rem;">
-      <h2 class="section-title" style="font-size: 1.5rem;">App Showcase & Experience Highlights</h2>
+      <h2 class="section-title" style="font-size: 1.5rem;">Official App Store Interface Showcase</h2>
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/CIBC_APP_Image_Assets/1.jpg" alt="CIBC Mobile Banking Screen 1" />
+      <div class="gallery-item" style="text-align: center; padding: 1rem; background: var(--bg-card);">
+        <img src="images/CIBC_APP_Image_Assets/1.jpg" alt="Goals & Financial Tracking"
+          style="border-radius: 8px; margin-bottom: 0.75rem;" />
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Set and track your financial
+          goals to reach them faster</p>
       </div>
-      <div class="gallery-item">
-        <img src="images/CIBC_APP_Image_Assets/2.jpg" alt="CIBC Mobile Banking Screen 2" />
+      <div class="gallery-item" style="text-align: center; padding: 1rem; background: var(--bg-card);">
+        <img src="images/CIBC_APP_Image_Assets/2.jpg" alt="Tools & Resources"
+          style="border-radius: 8px; margin-bottom: 0.75rem;" />
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Find the tools and resources you
+          need to bank at your convenience</p>
       </div>
-      <div class="gallery-item">
-        <img src="images/CIBC_APP_Image_Assets/3.jpg" alt="CIBC Mobile Banking Screen 3" />
+      <div class="gallery-item" style="text-align: center; padding: 1rem; background: var(--bg-card);">
+        <img src="images/CIBC_APP_Image_Assets/3.jpg" alt="Virtual Assistant"
+          style="border-radius: 8px; margin-bottom: 0.75rem;" />
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Virtual Assistant available 24/7
+          to answer banking questions</p>
       </div>
-      <div class="gallery-item">
-        <img src="images/CIBC_APP_Image_Assets/4.jpg" alt="CIBC Mobile Banking Screen 4" />
+      <div class="gallery-item" style="text-align: center; padding: 1rem; background: var(--bg-card);">
+        <img src="images/CIBC_APP_Image_Assets/4.jpg" alt="Card Management & Security"
+          style="border-radius: 8px; margin-bottom: 0.75rem;" />
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Lock your card or request a
+          replacement if damaged or lost</p>
       </div>
-      <div class="gallery-item">
-        <img src="images/CIBC_APP_Image_Assets/5.jpg" alt="CIBC Mobile Banking Screen 5" />
+      <div class="gallery-item" style="text-align: center; padding: 1rem; background: var(--bg-card);">
+        <img src="images/CIBC_APP_Image_Assets/5.jpg" alt="Alerts & Account Activity"
+          style="border-radius: 8px; margin-bottom: 0.75rem;" />
+        <p style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 500;">Set up alerts to stay informed
+          on account activity</p>
       </div>
     </div>
   </div>
@@ -85,8 +145,10 @@
           &copy; <span id="year"></span> Liaoyuan (Lawrence) Zeng. All rights reserved.
         </div>
         <ul class="footer-socials">
-          <li><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/lwrnczeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/lawrencezz/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/lwrnczeng" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="fa fa-github"></i></a></li>
           <li><a href="mailto:lwrnczeng@gmail.com" aria-label="Email"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
       </div>
@@ -97,4 +159,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
