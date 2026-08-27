@@ -3,8 +3,6 @@
    Modern Dark Theme with Glassmorphism, Micro-Interactions, and High-DPI Aesthetics
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 :root {
   --bg-canvas: #090d16;
   --bg-canvas-subtle: #0f172a;
