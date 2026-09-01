@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liaoyuan (Lawrence) Zeng | Staff iOS Engineer & Mobile Architect</title>
-  <meta name="description" content="Personal portfolio of Liaoyuan (Lawrence) Zeng - Staff iOS Engineer and Mobile Architect specializing in SwiftUI, Combine, Swift Concurrency, Clean Modular Architecture, Enterprise Banking Security, and AI Integration." />
+  <title>Liaoyuan (Lawrence) Zeng | Senior / Staff iOS Engineer & Mobile Architect</title>
+  <meta name="description" content="Personal portfolio of Liaoyuan (Lawrence) Zeng - Senior / Staff iOS Engineer and Mobile Architect specializing in SwiftUI, Combine, Swift Concurrency, Clean Modular Architecture, Enterprise Banking Security, and AI Integration." />
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,14 +49,14 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="pulse"></span>
-            <span>Available for Mobile Leadership & Architecture Roles</span>
+            <span id="heroBadgeText">Available for Senior & Staff Mobile Roles</span>
           </div>
           <h1 class="hero-title">
             Hi, I'm <span class="gradient-text">Lawrence Zeng</span>
           </h1>
-          <h2 class="hero-role">Staff iOS Engineer & Mobile Architect</h2>
+          <h2 class="hero-role" id="heroRoleText">Senior / Staff iOS Engineer & Mobile Architect</h2>
           <p class="hero-desc">
-            18+ years of software engineering experience (10+ years in native iOS) specializing in high-performance modular application design, enterprise banking security, SwiftUI/Combine, and AI agent integration. Technical anchor driving zero-regression deployments across multi-squad environments.
+            18+ years of software engineering experience (10+ years in native iOS) bridging high-level system architecture with hands-on Swift code delivery. Specialist in modular design, enterprise banking security, SwiftUI/Combine, and AI agent workflows. Technical anchor driving zero-regression deployments across multi-squad environments.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
@@ -109,7 +109,7 @@
 
       <div class="competency-card" style="background: var(--gradient-card);">
         <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-          As a <strong style="color: var(--text-primary);">Staff iOS Engineer & Mobile Architect</strong>, I bridge the gap between high-level architectural strategy and hands-on execution. My experience spans leading the modularization of Tier-1 banking applications at <strong style="color: var(--accent-cyan);">CIBC</strong>, scaling multi-million user telecom platforms at <strong style="color: var(--accent-cyan);">Bell Canada</strong>, and designing specialized agricultural and real-time streaming architectures.
+          As a <strong id="aboutRoleText" style="color: var(--text-primary);">Senior / Staff iOS Engineer & Mobile Architect</strong>, I bridge the gap between high-level architectural strategy and hands-on execution. My experience spans leading the modularization of Tier-1 banking applications at <strong style="color: var(--accent-cyan);">CIBC</strong>, scaling multi-million user telecom platforms at <strong style="color: var(--accent-cyan);">Bell Canada</strong>, and designing specialized agricultural and real-time streaming architectures.
           <br><br>
           I focus on building clean, resilient iOS codebases with <strong style="color: var(--text-primary);">SwiftUI, Combine, and Swift Concurrency</strong>, pioneering <strong style="color: var(--accent-cyan);">AI safety API integrations</strong>, and leveraging Kotlin Multiplatform (KMP) for unified business logic across mobile platforms.
         </p>
@@ -570,6 +570,44 @@
         navMenu.classList.remove('active');
       });
     });
+
+    // Dynamic Role Customization via URL Parameter (e.g. ?role=senior or ?role=staff)
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const role = params.get('role');
+      if (!role) return;
+
+      const roleLower = role.toLowerCase();
+      const heroRoleEl = document.getElementById('heroRoleText');
+      const heroBadgeEl = document.getElementById('heroBadgeText');
+      const aboutRoleEl = document.getElementById('aboutRoleText');
+
+      if (roleLower === 'senior' || roleLower === 'sr') {
+        const titleText = 'Senior Mobile Engineer - iOS | Mobile Architect';
+        if (heroRoleEl) heroRoleEl.textContent = titleText;
+        if (aboutRoleEl) aboutRoleEl.textContent = titleText;
+        if (heroBadgeEl) heroBadgeEl.textContent = 'Available for Senior Mobile & iOS Engineering Roles';
+        document.title = 'Liaoyuan (Lawrence) Zeng | Senior Mobile Engineer - iOS';
+      } else if (roleLower === 'staff') {
+        const titleText = 'Staff iOS Engineer & Mobile Architect';
+        if (heroRoleEl) heroRoleEl.textContent = titleText;
+        if (aboutRoleEl) aboutRoleEl.textContent = titleText;
+        if (heroBadgeEl) heroBadgeEl.textContent = 'Available for Staff Mobile & Architecture Roles';
+        document.title = 'Liaoyuan (Lawrence) Zeng | Staff iOS Engineer & Mobile Architect';
+      } else if (roleLower === 'lead') {
+        const titleText = 'Lead iOS Engineer & Mobile Architect';
+        if (heroRoleEl) heroRoleEl.textContent = titleText;
+        if (aboutRoleEl) aboutRoleEl.textContent = titleText;
+        if (heroBadgeEl) heroBadgeEl.textContent = 'Available for Lead Mobile & Architecture Roles';
+        document.title = 'Liaoyuan (Lawrence) Zeng | Lead iOS Engineer & Mobile Architect';
+      } else if (roleLower === 'architect') {
+        const titleText = 'Mobile Solutions Architect & Principal iOS Engineer';
+        if (heroRoleEl) heroRoleEl.textContent = titleText;
+        if (aboutRoleEl) aboutRoleEl.textContent = titleText;
+        if (heroBadgeEl) heroBadgeEl.textContent = 'Available for Mobile Architecture & Principal Roles';
+        document.title = 'Liaoyuan (Lawrence) Zeng | Mobile Solutions Architect';
+      }
+    })();
   </script>
 </body>
 </html>
